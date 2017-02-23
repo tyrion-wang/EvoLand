@@ -48,8 +48,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\DNA.cs" />
+     <Compile Include="Assets\Script\Genome.cs" />
      <Compile Include="Assets\Script\Living.cs" />
+     <Compile Include="Assets\Script\LivingGroup.cs" />
+     <Compile Include="Assets\Script\Tools\ExRandom.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
