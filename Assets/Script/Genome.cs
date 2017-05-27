@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Genome {
 	public BitArray gene = new BitArray(4*5+2);
-	public int maxAge = 20;
+	public int maxAge = 100;
 	public int[] sex = new int[2]{0,0};
 	public float body = 1.0f;
 	public System.Random rnd = null;

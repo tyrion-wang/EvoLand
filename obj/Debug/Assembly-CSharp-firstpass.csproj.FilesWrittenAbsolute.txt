@@ -1,0 +1,17 @@
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/UnityEngine.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/UnityEditor.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Mono.Cecil.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Unity.DataContract.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/tyrion/VRDev/workspace_unity/EVOLand/Temp/bin/Debug/Mono.Cecil.Mdb.dll

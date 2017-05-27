@@ -22,11 +22,16 @@ public class Living : MonoBehaviour {
 		}else{
 			goRight = false;
 		}
+		move();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = position;
+		// transform.position = position;
+		// transform.Translate(position);
+		// float step = 20 * Time.deltaTime;
+        // transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 0, 0), step); 
+		
 	}
 	void FixedUpdate () {
 		Check();
@@ -39,7 +44,7 @@ public class Living : MonoBehaviour {
 		}
 	}
 	void Move(){
-		RandomPosition();
+		// RandomPosition();
 	}
 
 	void OnCollisionEnter(Collision collisionInfo)
@@ -97,5 +102,12 @@ public class Living : MonoBehaviour {
 
 	void die(){
 		Destroy(transform.gameObject);
+	}
+
+	void move(){
+		float x = Random.Range(-5,5);
+		float y = transform.position.y; 
+		float z = Random.Range(-5,5);
+		iTween.MoveBy(gameObject, iTween.Hash("amount", new Vector3(x, y, z), "speed", 2.5, "easeType", "easeInOutExpo", "oncomplete", "move"));
 	}
 }
