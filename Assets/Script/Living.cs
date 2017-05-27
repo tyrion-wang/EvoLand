@@ -8,21 +8,15 @@ public class Living : MonoBehaviour {
 	public Material skin_2;
 	public Vector3 position = new Vector3(0,0,0);
 	public Genome dna = new Genome();
-	private bool goRight = true;
 	private int age = 0;
 	void Start () {
 		position = transform.position;
 		print(dna.body);
 		transform.localScale = new Vector3(dna.body, dna.body, dna.body);
 		
-		print(dna.toString());
+		dna.Print();
 
-		if(position.x>0){
-			goRight = true;
-		}else{
-			goRight = false;
-		}
-		move();
+		Move();
 	}
 	
 	// Update is called once per frame
@@ -35,16 +29,12 @@ public class Living : MonoBehaviour {
 	}
 	void FixedUpdate () {
 		Check();
-		Move();
 	}
 	void Check(){
 		age++;
 		if(age >= dna.maxAge){
 			die();
 		}
-	}
-	void Move(){
-		// RandomPosition();
 	}
 
 	void OnCollisionEnter(Collision collisionInfo)
@@ -68,46 +58,14 @@ public class Living : MonoBehaviour {
 		GameObject living = (GameObject)Instantiate(Resources.Load("Prefabs/Living"));
 	}
 
-	public int[] RandomPosition(){
-		int [] move = new int[2]  {0, 0};
-		int direction = Random.Range(1,5);
-		if(goRight){
-			position.x--;
-		}else{
-			position.x++;
-		}
-		// switch(direction){
-		// 	case 1  :
-		// 		position.x++;
-		// 	break; 
-
-		// 	case 2  :
-		// 		position.x--;
-		// 	break; 
-		
-		// 	case 3  :
-		// 		position.z++;
-		// 	break; 
-
-		// 	case 4  :
-		// 		position.z--;
-		// 	break; 
-
-		// 	default : 
-       	// 		position.x++;
-       	// 	break; 
-		// }
-		return move;
-	}
-
 	void die(){
 		Destroy(transform.gameObject);
 	}
 
-	void move(){
+	void Move(){
 		float x = Random.Range(-5,5);
 		float y = transform.position.y; 
 		float z = Random.Range(-5,5);
-		iTween.MoveBy(gameObject, iTween.Hash("amount", new Vector3(x, y, z), "speed", 2.5, "easeType", "easeInOutExpo", "oncomplete", "move"));
+		iTween.MoveBy(gameObject, iTween.Hash("amount", new Vector3(x, y, z), "speed", 2.5, "easeType", "easeInOutExpo", "oncomplete", "Move"));
 	}
 }
